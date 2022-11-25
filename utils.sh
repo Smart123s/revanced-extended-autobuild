@@ -197,11 +197,11 @@ build_rv() {
 		fi
 
 		local stock_apk="${TEMP_DIR}/${app_name_l}-stock-v${version}-${arch}.apk"
-		local apk_output="${BUILD_DIR}/${app_name_l}-revanced-v${version}-${arch}.apk"
+		local apk_output="${BUILD_DIR}/${app_name_l}-revanced-extended-v${version}-${arch}.apk"
 		if [ "${args[microg_patch]:-}" ]; then
-			local patched_apk="${TEMP_DIR}/${app_name_l}-revanced-v${version}-${arch}-${build_mode}.apk"
+			local patched_apk="${TEMP_DIR}/${app_name_l}-revanced-extended-v${version}-${arch}-${build_mode}.apk"
 		else
-			local patched_apk="${TEMP_DIR}/${app_name_l}-revanced-v${version}-${arch}.apk"
+			local patched_apk="${TEMP_DIR}/${app_name_l}-revanced-extended-v${version}-${arch}.apk"
 		fi
 		if [ ! -f "$stock_apk" ]; then
 			if [ $dl_from = apkmirror ]; then
@@ -254,13 +254,13 @@ build_rv() {
 			pn=$([ "${arch}" = "all" ] && echo "${app_name_l}-rv-jhc-magisk" || echo "${app_name_l}-${arch}-rv-jhc-magisk")
 		fi
 		module_prop "$pn" \
-			"${args[app_name]} ReVanced" \
+			"${args[app_name]} ReVanced Extended" \
 			"$version" \
-			"${args[app_name]} ReVanced Magisk module" \
+			"${args[app_name]} ReVanced Extended Magisk module" \
 			"https://raw.githubusercontent.com/${GITHUB_REPOSITORY}/update/${upj}" \
 			"$base_template"
 
-		local module_output="${app_name_l}-revanced-magisk-v${version}-${arch}.zip"
+		local module_output="${app_name_l}-revanced-extended-magisk-v${version}-${arch}.zip"
 		zip_module "$patched_apk" "$module_output" "$stock_apk" "${args[pkg_name]}" "$base_template"
 		rm -rf "$base_template"
 
@@ -411,7 +411,7 @@ module_prop() {
 name=${2}
 version=v${3}
 versionCode=${NEXT_VER_CODE}
-author=j-hc
+author=inotia00
 description=${4}" >"${6}/module.prop"
 
 	if [ "$ENABLE_MAGISK_UPDATE" = true ]; then echo "updateJson=${5}" >>"${6}/module.prop"; fi
