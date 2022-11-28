@@ -22,9 +22,8 @@ ETC
 ※ Please refer to the [documentations](https://github.com/inotia00/revanced-documentation/wiki/Method-3.-Using-official-ReVanced-Manager-(Android)) for a guide to building ReVanced Extended using the official ReVanced Manager.
   
 **App Versions:**  
-YouTube: 17.45.36  
 Music (arm64-v8a): 5.33.51  
-Music (arm-v7a): 5.33.51  
+YouTube: 17.45.36  
 
 Install [Vanced Microg](https://github.com/TeamVanced/VancedMicroG/releases) to be able to use non-root YouTube or Music  
 
