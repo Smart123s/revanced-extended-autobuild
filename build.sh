@@ -37,11 +37,23 @@ if ((COMPRESSION_LEVEL > 9)) || ((COMPRESSION_LEVEL < 1)); then
 	abort "COMPRESSION_LEVEL must be between 1 and 9"
 fi
 
-log "**App Versions:**"
-build_youtube &
-build_music &
+build_functions=(
+	build_youtube build_music
+)
 
+log "**App Versions:**"
+idx=0
+for f in "${build_functions[@]}"; do
+	ret=$($f &)
+	if ! ((idx % 2)); then
+		wait
+	fi
+	if [[ $ret != 2 ]]; then
+		idx=$((idx + 1))
+	fi
+done
 wait
+rm -rf temp/tmp.*
 
 if [ "$BUILD_MINDETACH_MODULE" = true ]; then
 	echo "Building mindetach module"
