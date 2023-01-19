@@ -29,7 +29,7 @@ ETC
   
 **App Versions:**  
 YouTube: 17.49.37  
-Music (arm64-v8a): 5.39.52  
+Music (arm64-v8a): 5.40.51  
 
 Install [Vanced Microg](https://github.com/TeamVanced/VancedMicroG/releases) to be able to use non-root YouTube or Music  
 
