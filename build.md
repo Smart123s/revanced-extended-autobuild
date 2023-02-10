@@ -26,9 +26,6 @@ ETC
 - [european countries](https://crowdin.com/project/revancedextendedeu)
 - [other countries](https://crowdin.com/project/revancedextended)
   
-CLI: revanced-cli-2.21.0-all.jar  
-Integrations: revanced-integrations-0.95.6.apk  
-Patches: revanced-patches-2.159.6.jar  
 **App Versions:**  
 YouTube: 18.05.35  
 Music (arm64-v8a): 5.43.55  
