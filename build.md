@@ -1,22 +1,19 @@
 CLI: revanced-cli-2.21.0-all.jar  
-Integrations: revanced-integrations-0.100.18.apk  
-Patches: revanced-patches-2.166.18.jar  
+Integrations: revanced-integrations-0.100.24.apk  
+Patches: revanced-patches-2.166.24.jar  
 
 YouTube
 ==
-- add `hide-category-bar` patch https://github.com/inotia00/ReVanced_Extended/issues/136 https://github.com/inotia00/ReVanced_Extended/issues/214
-- add `force-player-button-background` patch (Excluded by default. this patch fixes this issue https://github.com/inotia00/ReVanced_Extended/issues/569)
-- fix: typo https://github.com/inotia00/ReVanced_Extended/issues/567
-- fix: `optimize-resource` patch removes license activity https://github.com/inotia00/ReVanced_Extended/issues/568
+- update ad filter
+- rollback: `hide-account-menu` patch does not remove 'Your videos' and 'Downloads' menus in the library tab
 - crowdin translation update
-`Azerbaijani`, `Chinese Simplified`, `Chinese Traditional`, `French`, `Korean`, `Spanish`, `Turkish`, `Ukrainian`, `Vietnamese`
+`Chinese Traditional`, `French`, `Korean`, `Polish`, `Russian`, `Turkish`, `Ukrainian`
 
 
 YouTube Music
 ==
 - crowdin translation update
-`Chinese Traditional`, `Korean`
-
+`Chinese Traditional`, `Korean`, `Polish`
 
 ※ Compatible ReVanced Manager: v0.0.57
 ※ If you want to contribute to the translation, refer below
@@ -27,7 +24,7 @@ YouTube Music
   
 **App Versions:**  
 YouTube: 18.11.36  
-Music (arm64-v8a): 5.49.54  
+Music (arm64-v8a): 5.50.53  
 
 Install [Vanced Microg](https://github.com/TeamVanced/VancedMicroG/releases) to be able to use non-root YouTube or Music  
 
