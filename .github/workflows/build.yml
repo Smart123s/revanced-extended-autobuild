@@ -35,7 +35,6 @@ jobs:
 
       - name: Build modules/APKs (ReVanced)
         run: ./build.sh config.toml
-        if: false
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GITHUB_REPOSITORY: $GITHUB_REPOSITORY

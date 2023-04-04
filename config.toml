@@ -10,4 +10,4 @@ build-mindetach-module = false
 [Photomath]
 build-mode = "apk"
 version = "auto"
-apkmonk-dlurl = "https://www.apkmonk.com/app/com.microblink.photomath/"
+direct-dlurl = "https://archive.org/download/com.microblink.photomath-8.20.0-all/com.microblink.photomath-8.20.0-all.apk"
