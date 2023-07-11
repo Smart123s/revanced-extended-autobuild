@@ -1,6 +1,15 @@
-CLI: revanced-cli-2.22.0-all.jar  
-Integrations: revanced-integrations-0.112.1.apk  
-Patches: revanced-patches-2.182.1.jar  
+Music-arm64: 6.10.51  
+YouTube: 18.25.40  
+
+Install [Vanced Microg](https://github.com/TeamVanced/VancedMicroG/releases) for non-root YouTube or YT Music  
+
+[revanced-magisk-module](https://github.com/j-hc/revanced-magisk-module)  
+
+---
+Changelog:  
+CLI: j-hc/revanced-cli-2.23.0-all.jar  
+Integrations: inotia00/revanced-integrations-0.112.1.apk  
+Patches: inotia00/revanced-patches-2.182.1.jar  
 
 YouTube
 ==
@@ -31,11 +40,4 @@ Etc
 [Crowdin translation]
 - [European Countries](https://crowdin.com/project/revancedextendedeu)
 - [Other Countries](https://crowdin.com/project/revancedextended)
-  
-**App Versions:**  
-YouTube: 18.25.40  
-Music (arm64-v8a): 6.08.50  
-
-Install [Vanced Microg](https://github.com/TeamVanced/VancedMicroG/releases) to be able to use non-root YouTube or Music  
-
-[revanced-magisk-module](https://github.com/j-hc/revanced-magisk-module)  
+---  
