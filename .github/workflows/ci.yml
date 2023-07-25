@@ -41,7 +41,7 @@ jobs:
           }
 
           is_patches_latest() {
-            PATCHES_SRC=$(toml_get "$(toml_get_table "")" patches-source) || PATCHES_SRC="ReVanced/revanced-patches"
+            PATCHES_SRC=$(toml_get "$(toml_get_table "")" patches-source) || PATCHES_SRC="inotia00/revanced-patches"
             last_patches_url=$(gh_req https://api.github.com/repos/${PATCHES_SRC}/releases/latest - | json_get 'browser_download_url' | grep 'jar')
             last_patches=${last_patches_url##*/}
             cur_patches=$(sed -n "s/.*Patches: ${PATCHES_SRC%%/*}\/\(.*\)/\1/p" build.md | xargs)
@@ -61,12 +61,6 @@ jobs:
             echo "dont build!"
             echo "SHOULD_BUILD=0" >> $GITHUB_OUTPUT
           fi
-
-      - name: Clear older runs
-        env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: |
-          gh run list -L400 --json databaseId -q '.[].databaseId' | tail -n+10 | xargs -IID gh api "repos/$(gh repo view --json nameWithOwner -q .nameWithOwner)/actions/runs/ID" -X DELETE || :
 
     outputs:
       SHOULD_BUILD: ${{ steps.should_build.outputs.SHOULD_BUILD }}
