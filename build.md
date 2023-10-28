@@ -1,7 +1,7 @@
-YouTube-Extended: 18.41.39  
 Music-Extended: 6.25.53  
+YouTube-Extended: 18.41.39  
 
-Install [Vanced Microg](https://github.com/TeamVanced/VancedMicroG/releases) for non-root YouTube or YT Music  
+Install [Vanced Microg](https://github.com/TeamVanced/VancedMicroG/releases) for non-root YouTube and YT Music  
 
 [revanced-magisk-module](https://github.com/j-hc/revanced-magisk-module)  
 
